@@ -264,8 +264,8 @@
       }
       .inst{
         margin: 0vw;
-        margin-top: 75vh;
-        margin-left: 17vh;
+        margin-top: 75vw;
+        margin-left: 17vw;
 
       }
       .name-box{
@@ -287,13 +287,13 @@
         width: 40vw;
       }
       #game-container  {
-        margin: 0vh;
+        margin: 0vw;
       }
       #game #tiles{
-        margin: 0vh;
+        margin: 0vw;
       }
       #game .score p{
-        margin: 0vh;
+        margin: 0vw;
       }
     @media(max-width: 320px){
       .result_box .complete_text{
