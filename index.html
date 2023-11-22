@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano game</title>
+    <link rel="stylesheet" href="./piano tiles/style.css">
+<body>
+  <div class="logo  ">
+    <img src="./piano tiles/image 1.png" alt="">
+  </div>
+<div class="game-name  ">
+  <h4>Piano tiles</h4> 
+   
+
+</div>  
+<div class="name-box  ">
+    <div class="name">
+      Enter your name..!
+       
+    <input type="text" placeholder="Name." class="om" >
+       
+    </div>
+     
+</div>
+<div class="img">
+    <img src="https://drive.google.com/uc?id=19zSLvSV1l4_bkxfaYUC9OpR1OZLBPZa_">
+</div>
+ 
+<div class="inst">
+  <a href="./piano tiles/instruction.html"><h2><u>Instructions</u> </h2> </a> 
+</div>
+<div class="start"> 
+  <button>Play</button>
+</div> 
+ 
+<div id="game" style="display: none;">
+  <div id="game-container">
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+    <div class="line" id="line4"></div>
+  </div>
+  <div class="tiles" id="tiles"></div> 
+  <div class="score"><p id="score">0</p></div>
+</div>
+<div class="result_box">
+  <div class="icon">
+     
+  </div>
+  <div class="complete_text">You've completed The Game!</div>
+  <div class="score_text">You've scored 0 points</div>
+  <div class="buttons">
+      <button class="restart">Replay</button>
+  </div>
+</div>
+<audio id="audio" src="https://aac.saavncdn.com/469/404b32cabe7da38a53459aca41b2ef54_320.mp4" hidden>
+<audio id="play" src="https://drive.google.com/uc?id=16ZqyQo4C59nUeXcP7H7L7XzUwrI7f3bW" hidden>
+<audio id="out" src="https://drive.google.com/uc?id=1OtAEm0PY38LdtKPBRe_ucoysYkAY7cG2" hidden>
+<audio id="result" src="https://drive.google.com/uc?id=1GvdIT1VsX48R9emQHCWxs4KP-hEQxeal" hidden>
+    
+    <script src="./piano tiles/script.js"></script>
+</body>
+</html>
