@@ -263,25 +263,25 @@
           width: 100%;
       }
       .inst{
-        margin: 0vh;
+        margin: 0vw;
         margin-top: 75vh;
         margin-left: 17vh;
 
       }
       .name-box{
-        margin: 0vh;
-        margin-top: 39vh;
+        margin: 0vw;
+        margin-top: 39vw;
         margin-left: 7vw;
       }
       .game-name{
-        margin: 0vh;
+        margin: 0vw;
         font-size: 7vw;
-        margin-top: 30vh;
+        margin-top: 30vw;
         margin-left: 30vw;
       }
       .logo{
-        margin: 0vh;
-        margin-top: 10vh;
+        margin: 0vw;
+        margin-top: 10vw;
         margin-left: 31vw;
         height: 40vw;
         width: 40vw;
