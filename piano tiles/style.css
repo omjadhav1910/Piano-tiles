@@ -27,7 +27,7 @@
     height: 60px;
     font-size: 3vw;
     font-weight: 700;
-    top: 60%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #0c4685;
@@ -51,7 +51,7 @@
     height: 25%;  
   width: auto;  
   position: absolute;
-  top: 20%;  
+  top: 15%;  
   left: 50%;
   transform: translate(-50%, -50%);
   }
@@ -91,7 +91,7 @@
   padding-top: 0vw;
   opacity: 1;
   position: absolute;
-  top: 35%;  
+  top: 30%;  
   left: 51%;
   transform: translate(-50%, -50%); 
   font-size: 2vw;
@@ -130,7 +130,7 @@
   }
   .inst{
     position: absolute;
-  top: 94%;
+  top: 90%;
   left: 51%;
   transform: translate(-50%, -50%);
   height: 7vw;
@@ -325,7 +325,7 @@
       }
       .inst{
         margin: 0vw;
-        margin-top: -30vw;
+        margin-top: 100vw;
         margin-left: -10vw;
 
       }
@@ -460,6 +460,7 @@
       margin: 0vw;
     }
   } 
+  /*
    @media(max-width: 800px){
     .result_box .game-name{
       width: 100%;

@@ -21,7 +21,7 @@ var step = 0;
 var mar = randomMargin(),mar2;
  
 
-// Retrieve the name from local storage
+//  the name from local storage
 let playerName = localStorage.getItem("playerName");
 if (playerName) {
   result_box.querySelector(".complete_text").innerText =
