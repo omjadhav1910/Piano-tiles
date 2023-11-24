@@ -19,6 +19,7 @@ var count = 1;
 var score = 0;
 var step = 0;
 var mar = randomMargin(),mar2;
+ 
 
 // Retrieve the name from local storage
 let playerName = localStorage.getItem("playerName");
@@ -173,4 +174,3 @@ start.querySelector("button").onclick = () => {
   speed(400);
   setTimeout(startAudio, 1000);
 };
-

@@ -27,7 +27,9 @@
     height: 60px;
     font-size: 3vw;
     font-weight: 700;
-    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #0c4685;
     padding: 1vw 2vw;
     outline: none;
@@ -317,7 +319,7 @@
     
   }
   
-  /* @media(max-width: 412px){
+  @media(max-width: 412px)  {
       .result_box .game-name{
           width: 100%;
       }
@@ -372,6 +374,9 @@
         margin-left: 2vw;
         height: 45vw;
         width: 45vw;
+        top: 20%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       #game-container  {
         margin: 0vw;
@@ -454,8 +459,8 @@
     #game .score p{
       margin: 0vw;
     }
-  } */
-  /* @media(max-width: 800px){
+  } 
+   @media(max-width: 800px){
     .result_box .game-name{
       width: 100%;
   }
@@ -527,4 +532,4 @@
          
 
      
-   */
+  
