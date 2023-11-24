@@ -158,7 +158,7 @@
   .spotify-playlists .list .item {
     min-width: 140px;
     width: 160px;
-    padding: 15px;
+    padding: 11px;
     background-color: #181818;
     border-radius: 6px;
     cursor: pointer;
@@ -179,7 +179,7 @@
     position: absolute;
     right: 10px;
     top: -60px;
-    padding: 18px;
+    padding: 13px;
     background-color: #1db954;
     border-radius: 100%;
     opacity: 0;

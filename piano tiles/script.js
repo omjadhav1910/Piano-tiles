@@ -152,7 +152,7 @@ let missedTiles = 0;
 
 function removeDiv(e) {
   var bg = e.style.background;
-  if (bg == "") {
+  if (bg == "bg") {
      
     missedTiles++;
     if (missedTiles >= 1) {
@@ -184,5 +184,4 @@ start.querySelector("button").onclick = () => {
   speed(400);
   setTimeout(startAudio, 1000);
 };
-
 

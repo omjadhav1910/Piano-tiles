@@ -23,16 +23,16 @@
    
   
   .start button{
-    width: 220px;
-    height: 67.3px;
-    font-size: 35px;
+    width: 18vw;
+    height: 5vw;
+    font-size: 3vw;
     font-weight: 700;
     
     color: #0c4685;
-    padding: 7px 25px;
+    padding: 1vw 2vw;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vw;
     background: #fff;
     cursor: pointer;
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
@@ -60,65 +60,66 @@
     position: absolute;
   }
   .name-box{
-    width: 350px;
-  height: 25vh; /* Set height to 50% of the viewport height */
+    width: 25vw;
+  height: 13vw; /* Set height to 50% of the viewport height */
   background-color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 50%;
-  top: 45%;  
+  top: 43%;  
   transform: translateX(-50%);
-  border-radius: 15px;
+  border-radius: 1vw;
   box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.3);
 
   }
   .name{
     color: #000000;
-    padding-left: 29px;
-    padding-top: 5px;
+    padding-left: 2.4vw;
+    padding-top: 0.5vw;
     font: normal bold 25px/1.2 "proxima-nova";
-    letter-spacing: -1px;
-    font-size: 23px;
+    letter-spacing: -0.1vw;
+    font-size: 1.7vw;
     
   }
   .game-name{
-    width: 150px;
-  height: 30px;
+    width: 15vw;
+  height: 3.5vw;
   font-family: 'Kanit', sans-serif;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding-left: 4vw;
+  padding-top: 0vw;
   opacity: 1;
   position: absolute;
   top: 40%; 
   left: 51%; 
   transform: translate(-50%, -50%);  
-  font-size: 23px;
+  font-size: 2vw;
 
   }
  
   .om {
     position: absolute;
-    height: 40px;
-    width: 280px;
-    margin-top: -118px;
-    margin-left: 27px;
-    padding-left: 10px;
+    height: 3vw;
+    width: 20.3vw;
+    margin-top: -10vw;
+    margin-left: 2vw;
+    padding-left: 1vw;
     border: none;
     background-color: #007bff;
-    border-radius: 4px;
+    border-radius: 0.5vw;
     background: linear-gradient( 111deg, rgba(205, 215, 250, 0.1) 0%, rgba(61, 79, 240, 0.1) 100% );
     box-shadow: inset 0px 10px 5px 0px rgba(255, 255, 255, 0.15), inset 0px -10px 5px 0px rgba(205, 215, 250, 0.15);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
   .om1{
-    height: 40px;
     position: absolute;
-    width: 280px;
-    margin-top: -63px;
-    margin-left: 26px;
-    padding-left: 10px;
-    border-radius: 4px;
+    height: 3vw;
+    width: 20.3vw;
+    margin-top: -6vw;
+    margin-left: 2vw;
+    padding-left: 1vw;
     border: none;
+    background-color: #007bff;
+    border-radius: 0.5vw;
     background: linear-gradient( 111deg, rgba(205, 215, 250, 0.1) 0%, rgba(61, 79, 240, 0.1) 100% );
     box-shadow: inset 0px 10px 5px 0px rgba(255, 255, 255, 0.15), inset 0px -10px 5px 0px rgba(205, 215, 250, 0.15);
     backdrop-filter: blur(5px);
@@ -129,8 +130,8 @@
   top: 94%;
   left: 51%;
   transform: translate(-50%, -50%);
-  height: 46px;
-  width: 148px;
+  height: 7vw;
+  width: 10vw;
   font-size: small;
   cursor: pointer;
   }
@@ -146,12 +147,12 @@
   
   #game .score{
     width: 100%;
-    max-width: 600px;
+    max-width: 50vw;
     height: auto;
     position: absolute;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: 1vw 0;
     z-index: 5;
   }
   #game .score p{
@@ -172,13 +173,14 @@
  
   }
   #game-container{
-    margin-left: 360px;
+    margin-left: 29vw;
+     
  
   }
   #game #tiles{
     display: block;
     overflow: hidden;
-    margin-left: 360px;
+    margin-left: 29vw;
     
   }
   
@@ -318,6 +320,11 @@
       }
       #game .score p{
         margin: 0vw;
+      }
+      @media(max-width: 430px){
+        #game-container{
+          margin : 0vw ;
+        }
       }
     @media(max-width: 320px){
       .result_box .complete_text{
