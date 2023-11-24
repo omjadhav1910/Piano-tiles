@@ -6,25 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="../index.html"><img class="arrow" src="arrow-removebg-preview.png" alt=""></a> 
+  <div class="main-div">
+      <a href="../index.html"><img class="arrow" src="arrow-removebg-preview.png" alt=""></a> 
+
       <div class="title">
         <h2>Instructions</h2>
       </div>
+      <div class="content">
+        <h2>1.Fill your name and nickname.</h2>
+        <h2>2.Click on the play button and start the game.</h2>
+        <h2>3.As you click on play the tiles will come down randomly you have to click on the tiles.</h2>
+        <h2>4.If you miss any one tile the GAME is OVER.</h2>
+      </div>
+    </div>
     <style>
         body{
             background-color: rgb(73, 235, 235);
         }
-         .instruction{
-            width: 70%;
-            margin-left: 16%;
-            margin-top: 4%
-         }
+          .title{
+             
+            color: blue;
+            top: 45%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);  
+            font-size: larger;
+          }
+          .content{
+            justify-content: flex-start;
+            padding-left: 3vw;
+            font-size: x-large;
+          }
+           
+          .main-div{
+            height: 30vw;
+            width: 60vw;
+            margin-left: 20vw;
+            margin-top: 10vw;
+            background-color: aliceblue;
+          }
          .arrow{
             position: absolute;
             width: 39px;
             height: 25px;
-            margin-left: 243px;
-            margin-top: 75px;        
+            margin-left: 23px;
+            margin-top: 10px;        
          }
     </style>
 </body>

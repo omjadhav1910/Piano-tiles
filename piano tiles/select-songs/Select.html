@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../select-songs/select.css">
+</head>
+<body>
+    
+    <div class="spotify-playlists">
+        <h2>Spotify Playlists</h2>
+    
+        <div class="list">
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player1" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player2" src="Drake - One Dance (Lyrics) ft. Wizkid & Kyla.mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <!-- <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item playlist-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play play-button"></span>
+                    <audio class="audio-player" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div>
+    
+            <div class="item" id="playlistItem">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                    <span class="fa fa-play" id="playButton"></span>
+                    <audio id="audioPlayer" src="Powfu-feat-beabadoobee-dont-stay-awake-for-too-long-Death-Bed-(Gospeljingle.com) (2).mp3"></audio>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+            </div> -->
+        </div>
+    </div>
+      <!-- <script src="../select-songs/select.js"></script> -->
+    <script>
+        // Get all elements with the class 'play-button'
+        var playButtons = document.querySelectorAll('.play-button');
+        var audioPlayers = document.querySelectorAll('[class^="audio-player"]');
+    
+        // Iterate through each play button and add a click event listener
+        playButtons.forEach(function (button, index) {
+            button.addEventListener('click', function () {
+                // Pause all audio elements
+                audioPlayers.forEach(function (audio) {
+                    audio.pause();
+                    audio.currentTime = 0; // Reset to the beginning
+                });
+    
+                // Get the corresponding audio element based on the index
+                var audioPlayer = document.querySelector('.audio-player' + (index + 1));
+                localStorage.setItem("audioNo",index+1)
+                
+                // Play the clicked audio
+                audioPlayer.play();
+            });
+        });
+
+    </script>
+    
+    
+    
+    
+</body>
+</html>
