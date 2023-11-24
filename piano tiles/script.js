@@ -75,64 +75,61 @@ function outs() {
   setTimeout(viewResult, 1000);
 }
 
-function appendDiv() {
+function appendDiv(){
   var ob = document.createElement("div");
 
-  do {
-    mar2 = randomMargin();
-  } while (mar == mar2) {
-    mar = mar2;
-  }
+  do{mar2 = randomMargin()}
+  while(mar == mar2){mar = mar2}
 
-  ob.style.marginLeft = mar2 + "%";
+  ob.style.marginLeft = mar2+"%";
   setTimeout(moveDown, 100, ob);
-  ob.onclick = () => {
-    ob.style.background = "rgba(0,0,0,0.2)";
+  ob.onclick = () =>{
+    ob.style.background = "rgba(0,0,0,0.2)"
     updateScore();
-  };  
-  if (score >= 50 && score < 100) step = 1;
-  else if (score >= 150 && score < 400) step = 2;
-  else if (score >= 400 && score < 800) step = 3;
-  else if (score >= 800) step = 4;
+  }
+  if(score >= 70 && score < 150) step = 1;
+  else if(score >= 150 && score < 400) step = 2;
+  else if(score >= 400 && score < 800) step = 3;
+  else if(score >= 800) step = 4;
   document.getElementById("tiles").prepend(ob);
 }
 
-function randomMargin() {
-  return 25 * Math.floor(Math.random() * 4);
-}
+function randomMargin(){return 25*Math.floor(Math.random()*4)}
 
-function moveDown(e) {
+function moveDown(e){
   e.classList.add("move");
-  if (step == 1) {
+  if(step == 1){
     e.classList.add("speedX1");
-    if (bool1 == true) {
+    if(bool1 == true){
       clearInterval(a);
       speed(300);
       reset();
       bool1 = false;
       tos = 1600;
     }
-  } else if (step == 2) {
+  } 
+  else if(step == 2){
     e.classList.add("speedX2");
-    if (bool2 == true) {
+    if(bool2 == true){
       clearInterval(a);
       speed(250);
       reset();
       bool2 = false;
       tos = 1600;
     }
-  } else if (step == 3) {
+  }
+  else if(step == 3){
     e.classList.add("speedX3");
-    if (bool3 == true) {
+    if(bool3 == true){
       clearInterval(a);
       speed(200);
       reset();
       bool3 = false;
       tos = 1200;
     }
-  } else if (step == 4) {
+  } else if(step == 4){
     e.classList.add("speedX4");
-    if (bool4 == true) {
+    if(bool4 == true){
       clearInterval(a);
       speed(160);
       reset();
@@ -140,32 +137,24 @@ function moveDown(e) {
       tos = 1000;
     }
   }
-  setTimeout(removeDiv, tos, e);
+  setTimeout(removeDiv, tos, e)
 }
 
-function updateScore() {
+function updateScore(){
   score++;
   sco.innerText = score;
 }
 
-let missedTiles = 0;  
 
-function removeDiv(e) {
+function removeDiv(e){
   var bg = e.style.background;
-  if (bg == "") {
-     
-    missedTiles++;
-    if (missedTiles >= 1) {
-      clearInterval(a);
-      outs();
-    }
-  } else {
-    missedTiles = 0;
-    updateScore();
+  if(bg == ""){
+    clearInterval(a);
+    outs();
   }
-
-  e.remove();
+  e.remove()
 }
+
 
 start.querySelector("button").onclick = () => {
   const playerNameInput = document.querySelector(".om");
