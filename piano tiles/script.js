@@ -152,7 +152,7 @@ let missedTiles = 0;
 
 function removeDiv(e) {
   var bg = e.style.background;
-  if (bg == "bg") {
+  if (bg == "") {
      
     missedTiles++;
     if (missedTiles >= 1) {
