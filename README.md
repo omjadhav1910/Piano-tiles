@@ -32,6 +32,7 @@
   ![image](https://github.com/omjadhav1910/Piano-tiles/assets/144478519/bb4b061b-d2a7-4894-a363-824124d24a87)
 - mobile responsive
 
-  ![image](https://github.com/omjadhav1910/Piano-tiles/assets/144478519/75802779-1ad8-4f08-91d1-a41ccdc732a7)
+![image](https://github.com/omjadhav1910/Piano-tiles/assets/144478519/fd134597-74f8-47d8-a01c-645cbfccef83)
+
 
 
