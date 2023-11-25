@@ -25,7 +25,7 @@
   .start button{
     width: 200px;
     height: 60px;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 700;
     top: 48%;
     left: 50%;
@@ -200,7 +200,7 @@
  
   
   .move{
-    transform: translateY(145vh);
+    transform: translateY(140vh);
     transition: transform linear 2s;
   }
   .speedX1{

@@ -88,7 +88,7 @@ function appendDiv(){
     ob.style.background = "rgba(0,0,0,0.2)"
     updateScore();
   }
-  if(score >= 70 && score < 150) step = 1;
+  if(score >= 140 && score < 150) step = 1;
   else if(score >= 150 && score < 400) step = 2;
   else if(score >= 400 && score < 800) step = 3;
   else if(score >= 800) step = 4;
@@ -106,7 +106,7 @@ function moveDown(e){
       speed(300);
       reset();
       bool1 = false;
-      tos = 1600;
+      tos = 500;
     }
   } 
   else if(step == 2){
