@@ -31,6 +31,7 @@
   # Some screenshots of mobile responsive and laptop version
   ![image](https://github.com/omjadhav1910/Piano-tiles/assets/144478519/bb4b061b-d2a7-4894-a363-824124d24a87)
 - mobile responsive
- ![Uploading image.png…]()
+
+  ![image](https://github.com/omjadhav1910/Piano-tiles/assets/144478519/75802779-1ad8-4f08-91d1-a41ccdc732a7)
 
 
